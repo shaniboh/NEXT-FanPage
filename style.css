@@ -31,11 +31,11 @@
   
   /* Style the topnav links */
   .topnav a {
-    float: left;
+    float: center;
     display: block;
     color: rgb(252, 252, 252);
     text-align: center;
-    padding: 14px 16px;
+    padding: 1px 3px;
     text-decoration: none;
   }
   
@@ -71,7 +71,7 @@
   /* Settings For Members, Albums, Merchandise */
   .column {
     float: left;
-    width: 14.286%;
+    width: 14.28%;
     margin-bottom: 16px;
     padding: 0 8px;
     background-image: url("https://i.pinimg.com/236x/9a/25/ae/9a25aeefd3c41788b0135ce705a89e37.jpg");
