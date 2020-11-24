@@ -1,23 +1,81 @@
-p {
-    font-family: 'Bangers', cursive;;
-    margin: 0;
-  
+* {
+    box-sizing: border-box;
   }
   
   html {
     box-sizing: border-box;
-    background-image: url("https://inspirationfeed.com/wp-content/uploads/2019/01/asoggetti-413830-unsplash-800x534.jpg");
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Bangers', cursive;
+  }
+  
+  h2{
+    color:rgb(99, 85, 85);
+  }
+  
+  img,iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Settings For Menu */
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(99, 85, 85);
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: rgba(26, 29, 28, 0.685);
+  }
+  
+  /* Settings For Header */
+  
+  /* Style the header */
+  .header {
+    background-image: url("https://i.pinimg.com/236x/9a/25/ae/9a25aeefd3c41788b0135ce705a89e37.jpg");
+    padding: 15px;
+    text-align: center;
+    color: rgb(99, 85, 85);
+  
   }
   
   *, *:before, *:after {
     box-sizing: inherit;
   }
   
+  /* Settings For History */
+  
+  .history{
+    padding: 50px;
+    text-align: center;
+    color: rgb(252, 252, 252);
+    background-color: rgb(99, 85, 85);
+  }
+  
+  /* Settings For Members, Albums, Merchandise */
   .column {
     float: left;
-    width: 33.3%;
+    width: 14.286%;
     margin-bottom: 16px;
     padding: 0 8px;
+    background-image: url("https://i.pinimg.com/236x/9a/25/ae/9a25aeefd3c41788b0135ce705a89e37.jpg");
+    color: rgb(99, 85, 85);
   }
   
   .card {
@@ -25,127 +83,121 @@ p {
     margin: 8px;
   }
   
-  .container {
-    padding: 0 16px;
-    color: rgb(92, 83, 83);
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
   }
   
-  .container::after, .row::after {
+  /* Settings For Members */
+  
+  .members {
+    display: flex;
+      width: 100%;
+      background-color: #fff;
+      flex-wrap: wrap;
+  }
+  
+  .split {
+    padding: 2%;
+      flex-basis: 46%;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .split img{
+     max-width:100%;
+  }
+  
+  @media screen and (max-width: 576px){
+    .split{
+    flex:1 100%;
+    flex-grow: inherit;
+    }
+  
+  }
+  
+  .mcontainer::after, .row::after {
     content: "";
     clear: both;
     display: table;
+  }
+  
+  .mcontainer {
+    padding: 0 16px;
+  
   }
   
   .title {
     color: grey;
   }
   
-  ul{list-style: none;}
-  
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-  }
-  
-  .flex-container > li {
-    color: #ffffff;
-    background-color: rgb(107, 99, 99);
-    width: 150px;
-    margin: 0px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 15px;
-    float:center;
-  }
-  
-  .flex-container input{
-    position:relative;
-  }
-  
-  .menu {
-    background-image:url("https://i.pinimg.com/originals/86/f7/6f/86f76f002b845c4f957072446c4e61e4.png");
-    color: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    padding: 10px 250px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .menu {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-image:url("https://i.pinimg.com/originals/86/f7/6f/86f76f002b845c4f957072446c4e61e4.png");
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    font-size: 10px;
-  
-  }
-  
-  .dropdown-content a {
-    color: rgb(92, 83, 83);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {background-color:rgb(170, 148, 148)}
-  
-  .menu:hover .dropdown-content {
-    display: block;
-  }
-  
-  .menu:hover .dropbtn {
-    background-color:rgb(225, 209, 240);
-  }
-  
-  @media screen and (max-width: 991px) {
-    img {
-      float: center;
-      width:  150px;
-      height: 150px;
-      object-fit: cover;
-      position: relative;
-    }
-  }
-  
-  @media screen and (min-width: 992px) {
-    img {
-      float: center;
-      width:  300px;
-      height: 300px;
-      object-fit: cover;
-      position: relative;
-    }
-  }
-  
-  @media screen and (min-width: 576px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
-  @media screen and (min-width: 992px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
+  /* Settings For Albums,Merchandise*/
   
   table, th, td {
-    border: 3px solid rgb(123, 127, 133);
-    font-size:20px;
+    border: 5px solid rgb(99, 85, 85);
+    font-size:15px;
+    color:rgb(99, 85, 85);
+    background-image: url("https://i.pinimg.com/236x/9a/25/ae/9a25aeefd3c41788b0135ce705a89e37.jpg");
   }
   
   table {
     width: 100%;
   }
+  
+  /* Settings For Contact Us*/
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(99, 85, 85);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: grey;
+  }
+  
+  /* Style the container/contact section */
+  .contactus-container {
+    border-radius: 5px;
+    background-image: url("https://i.pinimg.com/236x/9a/25/ae/9a25aeefd3c41788b0135ce705a89e37.jpg");
+    padding: 10px;
+    color:rgb(99, 85, 85);
+  }
+  
+  /* Create two columns that float next to eachother */
+  .contactus-column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .contactus-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .contactus-column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
