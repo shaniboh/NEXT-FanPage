@@ -14,6 +14,11 @@ Therefore, in my website I added in videos of each event after the description o
 
 The wireframe of the website can be seen in the link below or the attached Adobe XD files.
 
+https://xd.adobe.com/view/ba2ecc37-8bb7-4c5d-b028-de484a18f30f-ef7d/
+https://xd.adobe.com/view/c9e9afb4-0ee8-46f5-93c8-2117f4181a64-9cba/
+https://xd.adobe.com/view/79c74492-65be-4883-9761-963f880f8a81-2c94/
+https://xd.adobe.com/view/ed07f317-4c69-4e41-adbc-5166b36d64c5-b854/
+
 Features
 
 Feature 1 -- NEXT-History
