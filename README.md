@@ -1,5 +1,5 @@
-# ID-Assignment-1
-This is a repo for assignment 1.
+# NEXT-FanPage
+This is a repo for ID assignment 1.
 
 Overview
 
